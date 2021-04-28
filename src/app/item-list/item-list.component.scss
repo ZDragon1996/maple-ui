@@ -1,0 +1,29 @@
+select{
+    border: none;
+}
+
+.item-list{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.item-list-content{
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.item-card-img img{
+    width: 100%;
+}
+
+.item-list-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-card{
+    width: 24.8%;
+}

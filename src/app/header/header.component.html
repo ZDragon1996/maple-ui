@@ -9,11 +9,11 @@
         </div>
         <div class="wrapper-right wrapper">
             <ul>
-                <li><a href="#">帮助</a></li>
+                <li><a href="#">店铺地址</a></li>
                 <li> | </li>
-                <li><a href="#">加入我们</a></li>
+                <li><a href="#">我们</a></li>
                 <li> | </li>
-                <li><a href="#">登录</a></li>
+                <li><a routerLink='login'>登录</a></li>
             </ul>
         </div>
     </div>
@@ -139,9 +139,19 @@
                 <input placeholder="搜索">
             </div>
             <div class="list-icons">
-                <span class="material-icons">question_answer</span>
-                <span class="material-icons">account_circle</span>
-                <span class="material-icons">shopping_bag</span>
+                <div class="icon-button">
+                    <span class="material-icons">question_answer</span>
+                    <div class="pop-up">
+                        <p>对不起，此功能还在开发中</p>
+                        <p>如有需要，请联系客服电话 000-000-0000</p>
+                        <p>或关注微信公众号 MapleFashion</p>
+                        <p>感谢您的谅解</p>
+                    </div>
+                </div>
+                <div class="icon-button">
+                    <span class="material-icons" routerLink='login'>account_circle</span>
+                </div>
+                <span class="material-icons icon-button">shopping_bag</span>
             </div>
         </div>
     </div>

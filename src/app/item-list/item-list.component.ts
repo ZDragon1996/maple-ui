@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item-list',
@@ -11,5 +11,16 @@ export class ItemListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @HostListener('window:scroll', ['$event'])
+    onScroll(event) {
+      if(window.pageYOffset > 110){
+        document.getElementById("item-filter").style.position = "fixed";
+        document.getElementById("item-filter").style.top = "100px";
+      } else{
+        document.getElementById("item-filter").style.position = "relative";
+        document.getElementById("item-filter").style.top = "0";
+      }
+    }
 
 }
